@@ -1,0 +1,24 @@
+{
+  "name": "newinitial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "clean": "rm server/build -r -f && rm public/dist -r -f",
+    "build": "babel server/src --out-dir server/build",
+    "start": "babel-watch server/src/server.js",
+    "dev": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^2.5.1"
+  }
+}

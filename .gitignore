@@ -1,0 +1,8 @@
+node_modules
+server/node_modules
+client/node_modules
+server/build
+public/dist
+npm-debug.log
+client/npm-debug.log
+server/npm-debug.log
