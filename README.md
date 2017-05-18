@@ -1,3 +1,25 @@
+```
+myApp/
+  webpack.config.js
+  package.json
+
+  server/
+      src/
+        server.js
+        routes/
+      build/
+  
+  client/
+      src/
+        render.js
+        components/
+
+  public/
+    index.html
+    dist/    
+    
+```
+
 ## Client
 * React
 * React-DOM
