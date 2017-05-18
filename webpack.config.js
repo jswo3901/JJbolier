@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 
 module.exports = {
-    
+
     entry: {
         bundle: './client/src/index.js'
     },
@@ -19,6 +19,13 @@ module.exports = {
                 loader: "babel-loader"
             }
         ]
+    },
+    
+    devtool: 'inline-source-map',
+
+    watchOptions: {
+        aggregateTimeout: 300,
+        poll: 1000
     },
 
     plugins: [

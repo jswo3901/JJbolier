@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm server/build -r -f && rm public/dist -r -f",
     "build": "babel server/src --out-dir server/build",
-    "start": "babel-watch server/src/server.js",
+    "start": "supervisor server/src/server.js",
     "dev": "webpack --watch"
   },
   "keywords": [],
