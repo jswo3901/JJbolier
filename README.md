@@ -1,20 +1,20 @@
 ```
 myApp/
-  webpack.config.js -- 웹팩설정
-  package.json -- dev 패키지
+  webpack.config.js -> 웹팩설정
+  package.json -> 개발용 npm 패키지
 
   server/
-      package.json -- server 패키지
-      src/ -- 서버코드
-      build/ -- 서버코드 빌드
+      package.json -> 서버 npm
+      src/ -> 서버코드
+      build/ -> 서버코드 빌드
   
   client/
-      package.json -- client 패키지
-      src/ -- 클라이언트 코드
+      package.json -> 클라이언트 npm
+      src/ -> 클라이언트 코드
 
   public/
     index.html
-    dist/ -- 클라이언트 코드 번들
+    dist/ -> 클라이언트 코드 번들
     
 ```
 
