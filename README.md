@@ -1,17 +1,31 @@
-# on linux react app boilerplate
+* npm install on 'root', 'client', 'server'
 
-## npm install on
-1. root
-2. client
-3. server
+##1. Client
+* React
+* React-DOM
 
-## npm script
-1. "clean": "rm server/build -r -f && rm public/dist -r -f",
-2. "build": "babel server/src --out-dir server/build",
-3. "start": "supervisor server/src/server.js",
-* not compiled by babel
-4. "dev": "webpack --watch"
+##2. Server
+* Express
 
-## pre install -g
-1. npm install -g babel-cli
-2. npm install -g supervisor
+##3. DEV(ROOT)
+* babel(preset : react, env)
+* babel-watch
+* eslint(airbnb style)
+* webpack
+
+### 배포
+1. "clean": delete 'build folder & dist folder' (on unix shell)
+2. "build": build server file (preset:env, react)
+3. "start": node build server
+
+### 개발
+1. "webpack": forntend bundling with watching
+2. "lint": server eslinter (npm run lint -s)
+3. "dev": running server on babel-watch
+
+#### 추가할 사항
+1. react router
+2. webpack style loader
+
+3. babel polyfill
+4. webpack chunk && code splitting

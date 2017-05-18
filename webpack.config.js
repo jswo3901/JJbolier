@@ -3,7 +3,7 @@ const webpack = require('webpack');
 module.exports = {
 
     entry: {
-        bundle: './client/src/index.js'
+        bundle: './client/src/render.js'
     },
 
     output: {
@@ -14,13 +14,31 @@ module.exports = {
     module: {
         rules: [
             {
+                enforce: 'pre',
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: "babel-loader"
+                loader: 'eslint-loader',
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "babel-loader",
+                options: {
+                    presets: [[
+                        'env', {
+                            targets: {
+                                browsers: ['last 2 versions', '> 10%', 'ie 9'],
+                                "modules": false
+                            }
+                        }
+                    ],
+                        "react"
+                    ]
+                }
             }
         ]
     },
-    
+
     devtool: 'inline-source-map',
 
     watchOptions: {
