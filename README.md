@@ -1,17 +1,17 @@
-* npm install on 'root', 'client', 'server'
-
-##1. Client
+## Client
 * React
 * React-DOM
 
-##2. Server
+## Server
 * Express
 
-##3. DEV(ROOT)
+## DEV(ROOT)
 * babel(preset : react, env)
 * babel-watch
 * eslint(airbnb style)
 * webpack
+
+## npm install on 'root', 'client', 'server'
 
 ### 배포
 1. "clean": delete 'build folder & dist folder' (on unix shell)
