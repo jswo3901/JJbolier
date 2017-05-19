@@ -36,7 +36,7 @@ myApp/
 
 ## npm script
 ### 개발
-1. "lint": 린트 (npm run lint -s 로 실행해야 오류 없음)
+1. "lint": 린트 (실시간감시 & 수정)
 2. "webpack": 클라이언트 파일 번들링
 3. "dev": 서버 실행 (nodemon with babel-node)
 
