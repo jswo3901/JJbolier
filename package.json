@@ -7,8 +7,8 @@
     "clean": "rm server/build -r -f && rm public/dist -r -f",
     "build": "./node_modules/.bin/babel server/src --out-dir server/build --presets=env,react",
     "start": "node server/build/server.js",
+    "lint": "./node_modules/.bin/eslint --fix server/src, client/src",
     "webpack": "./node_modules/.bin/webpack --watch",
-    "lint": "./node_modules/.bin/eslint server/src",
     "dev": "./node_modules/.bin/babel-watch server/src/server.js"
   },
   "keywords": [],
@@ -23,7 +23,6 @@
     "babel-watch": "^2.0.6",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
-    "eslint-loader": "^1.7.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",

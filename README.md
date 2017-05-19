@@ -39,8 +39,8 @@ myApp/
 3. "start": 서버 시작(node)
 
 ### 개발
+1. "lint": 린트 (npm run lint -s 로 실행해야 오류 없음)
 1. "webpack": 클라이언트 파일 번들링
-2. "lint": 서버 린트 (npm run lint -s 로 실행해야 오류 없음)
 3. "dev": 서버 실행 (babel-watch)
 
 #### 추가할 사항
