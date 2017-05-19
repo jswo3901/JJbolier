@@ -5,11 +5,12 @@
   "main": "webpack.config.js",
   "scripts": {
     "clean": "rm server/build -r -f && rm public/dist -r -f",
-    "build": "./node_modules/.bin/babel server/src --out-dir server/build --presets=env,react",
+    "build": "./node_modules/.bin/babel server/src -w --out-dir server/build --presets=env,react",
     "start": "node server/build/server.js",
+    
     "lint": "./node_modules/.bin/eslint --fix server/src, client/src",
     "webpack": "./node_modules/.bin/webpack --watch",
-    "dev": "./node_modules/.bin/babel-watch server/src/server.js"
+    "dev": "./node_modules/.bin/nodemon --exec babel-node --presets=env,react ./server/src/server.js --watch ./server/src"
   },
   "keywords": [],
   "author": "",
@@ -20,12 +21,12 @@
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
-    "babel-watch": "^2.0.6",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
+    "nodemon": "^1.11.0",
     "webpack": "^2.5.1"
   }
 }
