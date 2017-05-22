@@ -1,0 +1,42 @@
+
+{
+  "유저정보(tables' schema)"
+
+  "_id":"123aiDifj219qo",
+  "user_id":"jusang",
+  "name":"nojusang",
+  "email":"jswo3901@gmail.com",
+  "phone":"010-5279-3901",
+  "password":"########",
+  "image":"jusang.jpg"
+}
+
+{
+  "방정보"
+
+  "_id":"kl3jlkjasf2333",
+  "room_id":"jusang room",
+  "room_name":"Html5 공부방",
+  "참여인원":"30명",
+  "참여 유저정보":"
+  {
+    유저1,
+    유저2,
+    유저3,
+    ...
+    }",
+  "생성 시간":"2017.05.21.23:00",
+  "채팅로그"
+
+}
+
+{
+  "방 리스트"
+
+  "방을 생성하면 방 정보가 방 리스트에 올라온다.",
+
+}
+
+{
+  "채팅로그"
+}
